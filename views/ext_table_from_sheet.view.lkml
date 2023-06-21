@@ -5,7 +5,7 @@ view: ext_table_from_sheet {
   dimension: category {
     type: string
     sql: ${TABLE}.Category ;;
-    required_access_grants: [view_category]
+    # required_access_grants: [view_category]
   }
 
   dimension: product {

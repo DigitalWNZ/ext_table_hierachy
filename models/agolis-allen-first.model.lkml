@@ -1,4 +1,4 @@
-connection: "agolis-allen-first-project"
+connection: "agolis_allen_first_connection"
 
 # include all the views
 include: "/views/**/*.view"
@@ -10,16 +10,16 @@ datagroup: agolis-allen-first_default_datagroup {
 
 persist_with: agolis-allen-first_default_datagroup
 
-access_grant: view_category {
-  user_attribute: department_multiple_value
-  allowed_values: ["product","finance"]
-}
+# access_grant: view_category {
+#   user_attribute: department_multiple_value
+#   allowed_values: ["product","finance"]
+# }
 
 explore: ext_table_from_sheet {
-  access_filter: {
-    field: ext_table_from_sheet.region
-    user_attribute: region_multiple_region
-  }
+  # access_filter: {
+  #   field: ext_table_from_sheet.region
+  #   user_attribute: region_multiple_region
+  # }
 }
 
 explore: ext_table_hierachy_seet {
